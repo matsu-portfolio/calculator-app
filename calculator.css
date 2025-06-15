@@ -1,0 +1,79 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+.calculator {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: max-content; /* 中身に合わせた幅にする */
+}
+
+#display {
+  width: 100%;/* ← 親要素に合わせて100% */
+  height: 40px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: right;
+  padding: 5px;
+  box-sizing: border-box; /* ← パディング込みで幅を計算 */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%; /* ← display と同じ幅に */
+  box-sizing: border-box;
+}
+
+/*数字ボタンの色*/
+button {
+  font-size: 1.2em;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(255, 205, 222); /* ボタンの色*/
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(255, 225, 236); /*ホバー（マウスを載せた時）の色*/
+}
+
+/*cの記号の色*/
+.ccc{
+    background: rgb(255, 242, 228);
+}
+
+.ccc:hover{
+    background: rgb(255, 262, 228);
+}
+
+
+/*＝の色*/
+.equal {
+  background: rgb(220, 77, 113);
+  color: white;
+}
+.equal:hover {
+  background: rgb(220, 97, 113);
+}
+
+/*演算子の色*/
+.kigou{
+    background: rgb(236, 166, 201);
+}
+
+.kigou:hover{
+    background: rgb(236, 186, 201);
+}
+
+/*配色見本より4色の組み合わせを使う
+hoverはrgbでgを+20する*/
